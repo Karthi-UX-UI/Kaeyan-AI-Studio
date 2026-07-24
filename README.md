@@ -1,50 +1,65 @@
 # Kaeyan AI Studio — Website
 
-A premium, single-page marketing site for **Kaeyan AI Studio** (*AI • Websites • Automation • Branding*), built with plain HTML5, CSS3 and vanilla JavaScript — no frameworks, no build step.
+A premium, single-page website for an AI product/design studio. Built with plain HTML5, CSS3, and vanilla JavaScript — no frameworks, no build step.
 
-## Project structure
+## Structure
 
 ```
 kaeyan-ai-studio/
-├── index.html          Full page markup (all sections)
-├── style.css            Design tokens, layout and all animation styles
-├── script.js             All interactivity (vanilla JS, no dependencies)
+├── index.html      # All markup/sections
+├── style.css        # Design tokens, layout, responsive, animations
+├── script.js         # Interactivity, data, and animations
 ├── assets/
-│   ├── favicon.svg       Placeholder favicon (logo mark)
-│   └── og-cover.svg      Placeholder Open Graph / Twitter share image
+│   └── logo.svg      # Placeholder logo/favicon — swap for your real mark
 └── README.md
 ```
 
-## Running it locally
+## Running it
 
-No build tools required. Either:
+No build tools needed. Either:
 
-1. Double-click `index.html` to open it directly in a browser, or
-2. Serve it locally for the best experience (some browsers restrict certain features on `file://`):
+- Open `index.html` directly in a browser, **or**
+- Serve it locally for the best experience (some browsers restrict certain features on `file://`):
 
-   ```bash
-   npx serve .
-   # or
-   python3 -m http.server 8080
-   ```
+```bash
+npx serve .
+# or
+python3 -m http.server 8080
+```
 
-Then visit `http://localhost:8080` (or whichever port your tool prints).
+## What's inside
 
-## What's included
+- Hero with a mouse-reactive canvas "neural network" (signature visual element)
+- Sticky glass navbar, mobile menu, dark/light theme toggle (remembered via `localStorage`)
+- Scroll-reveal animations, animated counters, custom cursor, magnetic CTA buttons
+- Services grid — 9 practice areas (covering all 35+ requested specialisations) with expandable detail panels
+- Bento-grid "Why choose us" section
+- Animated 7-stage process timeline
+- Portfolio grid with a full case-study modal (overview, problem, research, process, design system, outcome) and keyboard/prev-next navigation
+- Pricing tiers, infinite testimonial marquee, accordion FAQ
+- Contact form (client-side validated demo — wire up to your backend/email service) + newsletter field
+- SEO basics: meta description, Open Graph tags, JSON-LD schema, semantic headings
+- Respects `prefers-reduced-motion`, visible focus states, keyboard navigation throughout
 
-- **Sections**: sticky navbar, hero with canvas particle field + animated orb illustration, trusted-technologies marquee, about, 17-service accordion (features/deliverables/timeline/price per service), why-choose-us grid, 3-tier pricing, 6-step animated process timeline, portfolio grid, FAQ accordion, contact form with validation, and a full footer with newsletter signup.
-- **Motion**: page-load sequence, scroll-reveal via `IntersectionObserver`, animated counters, magnetic buttons, button ripple, marquee loop, accordion open/close transitions, timeline scroll-progress fill, ambient cursor glow and floating gradient shapes — all built with CSS transitions/keyframes plus `requestAnimationFrame` where continuous motion is needed.
-- **Accessibility**: semantic landmarks, visible focus states, `aria-expanded` on all accordions, `prefers-reduced-motion` support that disables non-essential motion.
-- **SEO**: descriptive meta tags, Open Graph + Twitter Card tags, `Organization` JSON-LD schema, semantic heading structure.
-- **Responsive**: fluid layout with breakpoints for desktop, laptop, tablet and mobile, including a slide-in mobile navigation drawer.
+## Before you launch
 
-## Customizing
+1. Replace `assets/logo.svg` with your real logo/wordmark and favicon.
+2. Swap the placeholder gradient thumbnails in Services/Portfolio for real photography and screenshots.
+3. Connect the contact form and newsletter form to a real backend (e.g. Formspree, a serverless function, or your CRM).
+4. Add a real Google Maps embed in place of the map placeholder in the Contact section.
+5. Update copy (pricing, team stats, testimonials) with your actual numbers.
+6. Add a proper `og-image` and run a Lighthouse pass once real assets are in place.
 
-- **Colors, type scale and spacing** are all defined as CSS custom properties at the top of `style.css` under `:root` — change a value once and it updates everywhere.
-- **Logo**: replace the `K` mark in the `.navbar__logo-mark` / `.footer__brand` elements in `index.html`, and swap `assets/favicon.svg` and `assets/og-cover.svg` with your final artwork.
-- **Copy and pricing**: all text lives directly in `index.html` — service descriptions, pricing tiers, FAQ answers and portfolio case studies can be edited in place.
-- **Contact form**: `script.js` currently validates fields client-side and shows a success message on submit (no backend). Wire the `contactForm` submit handler in `script.js` up to your endpoint of choice (e.g. Formspree, a serverless function, or your own API) when you're ready to receive real submissions.
+## Design tokens (for reference)
 
-## Browser support
-
-Built with modern, broadly-supported CSS (custom properties, grid, backdrop-filter) and JS (`IntersectionObserver`, `requestAnimationFrame`). Backdrop blur gracefully degrades to a solid background on browsers without support.
+| Token | Value |
+|---|---|
+| Background | `#050816` |
+| Secondary background | `#0C1124` |
+| Primary | `#0E183C` |
+| Gradient | `#3171F3 → #8438E6` |
+| Accent | `#8A6CFF` |
+| Success | `#00E0A4` |
+| Text primary / secondary | `#FFFFFF` / `#B8B8C0` |
+| Display font | Space Grotesk |
+| Body font | Inter |
