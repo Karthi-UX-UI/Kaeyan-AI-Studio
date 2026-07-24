@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaeyan AI Studio — AI • Websites • Automation • Branding</title>
+  <meta name="description" content="Kaeyan AI Studio builds AI-powered websites, branding, automation and product design for businesses that want to move like a funded startup." />
+  <meta name="keywords" content="AI agency, AI website design, workflow automation, branding studio, UX UI design, SaaS product design" />
+  <meta name="author" content="Kaeyan AI Studio" />
+  <link rel="canonical" href="https://kaeyan.ai/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Kaeyan AI Studio — Building AI-Powered Digital Experiences" />
+  <meta property="og:description" content="AI-powered websites, branding, automation and product design for businesses that want to move like a funded startup." />
+  <meta property="og:url" content="https://kaeyan.ai/" />
+  <meta property="og:site_name" content="Kaeyan AI Studio" />
+  <meta property="og:image" content="assets/og-cover.svg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kaeyan AI Studio — Building AI-Powered Digital Experiences" />
+  <meta name="twitter:description" content="AI-powered websites, branding, automation and product design for businesses that want to move like a funded startup." />
+  <meta name="twitter:image" content="assets/og-cover.svg" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Kaeyan AI Studio",
+    "url": "https://kaeyan.ai/",
+    "description": "AI-powered websites, branding, automation and product design studio.",
+    "sameAs": []
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ PAGE LOADER ============ -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__mark">
+      <span>K</span>
+    </div>
+    <div class="loader__bar"><span></span></div>
+  </div>
+
+  <!-- ============ CURSOR GLOW ============ -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#home" class="navbar__logo" aria-label="Kaeyan AI Studio — Home">
+        <span class="navbar__logo-mark" aria-hidden="true">K</span>
+        <span class="navbar__logo-text">Kaeyan<span class="navbar__logo-accent">.</span></span>
+      </a>
+
+      <nav class="navbar__nav" id="navLinks" aria-label="Primary">
+        <a href="#home" class="nav-link is-active">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#process" class="nav-link">Process</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <a href="#contact" class="btn btn--primary btn--sm magnetic">
+          <span>Book Free Consultation</span>
+        </a>
+        <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ MOBILE NAV ============ -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#home" class="mobile-nav__link">Home</a>
+    <a href="#services" class="mobile-nav__link">Services</a>
+    <a href="#portfolio" class="mobile-nav__link">Portfolio</a>
+    <a href="#process" class="mobile-nav__link">Process</a>
+    <a href="#about" class="mobile-nav__link">About</a>
+    <a href="#contact" class="mobile-nav__link">Contact</a>
+    <a href="#contact" class="btn btn--primary" style="margin-top:24px;">Book Free Consultation</a>
+  </div>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero__bg" aria-hidden="true">
+        <canvas id="particleCanvas" class="hero__particles"></canvas>
+        <div class="hero__grid"></div>
+        <div class="hero__glow hero__glow--a"></div>
+        <div class="hero__glow hero__glow--b"></div>
+        <div class="hero__noise"></div>
+        <div class="hero__shape hero__shape--1"></div>
+        <div class="hero__shape hero__shape--2"></div>
+        <div class="hero__shape hero__shape--3"></div>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <div class="badge reveal-up" data-delay="0">
+            <span class="badge__dot"></span>
+            AI Powered Digital Agency
+          </div>
+
+          <h1 class="hero__heading reveal-up" data-delay="1">
+            <span class="split-line">Building AI-Powered</span>
+            <span class="split-line"><span class="text-gradient">Digital Experiences.</span></span>
+          </h1>
+
+          <p class="hero__sub reveal-up" data-delay="2">
+            We help businesses transform through AI-powered websites, branding, automation, UX/UI design and digital marketing — engineered with the discipline of a product team, not a freelancer.
+          </p>
+
+          <div class="hero__actions reveal-up" data-delay="3">
+            <a href="#contact" class="btn btn--primary btn--lg magnetic">
+              <span>Book Consultation</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#services" class="btn btn--ghost btn--lg magnetic">
+              <span>Explore Services</span>
+            </a>
+          </div>
+
+          <div class="hero__stats reveal-up" data-delay="4">
+            <div class="hero__stat">
+              <span class="counter" data-count="120">0</span><span class="hero__stat-suffix">+</span>
+              <p>Projects Delivered</p>
+            </div>
+            <div class="hero__stat-divider"></div>
+            <div class="hero__stat">
+              <span class="counter" data-count="98">0</span><span class="hero__stat-suffix">%</span>
+              <p>Client Retention</p>
+            </div>
+            <div class="hero__stat-divider"></div>
+            <div class="hero__stat">
+              <span class="counter" data-count="24">0</span><span class="hero__stat-suffix">/7</span>
+              <p>AI Systems Live</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal-up" data-delay="2">
+          <div class="orb-scene">
+            <div class="orb-scene__ring orb-scene__ring--1"></div>
+            <div class="orb-scene__ring orb-scene__ring--2"></div>
+            <div class="orb-scene__ring orb-scene__ring--3"></div>
+            <div class="orb-scene__core">
+              <svg viewBox="0 0 200 200" width="100%" height="100%">
+                <defs>
+                  <radialGradient id="coreGrad" cx="35%" cy="30%" r="75%">
+                    <stop offset="0%" stop-color="#8fb4ff"/>
+                    <stop offset="45%" stop-color="#3171F3"/>
+                    <stop offset="100%" stop-color="#8438E6"/>
+                  </radialGradient>
+                </defs>
+                <circle cx="100" cy="100" r="70" fill="url(#coreGrad)"/>
+              </svg>
+            </div>
+            <div class="orb-scene__node orb-scene__node--1"></div>
+            <div class="orb-scene__node orb-scene__node--2"></div>
+            <div class="orb-scene__node orb-scene__node--3"></div>
+            <div class="orb-scene__node orb-scene__node--4"></div>
+            <svg class="orb-scene__lines" viewBox="0 0 400 400" aria-hidden="true">
+              <line x1="200" y1="200" x2="60" y2="90" />
+              <line x1="200" y1="200" x2="340" y2="80" />
+              <line x1="200" y1="200" x2="70" y2="330" />
+              <line x1="200" y1="200" x2="330" y2="320" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"><i></i></div>
+      </div>
+    </section>
+
+    <!-- ============ TRUST / TECH STRIP ============ -->
+    <section class="trust" aria-label="Trusted technologies">
+      <div class="container">
+        <p class="trust__label reveal-up">Trusted Technologies</p>
+      </div>
+      <div class="trust__track-wrap">
+        <div class="trust__track" id="trustTrack">
+          <!-- duplicated in JS for seamless loop -->
+          <div class="trust__item"><span>OpenAI</span></div>
+          <div class="trust__item"><span>Claude</span></div>
+          <div class="trust__item"><span>Figma</span></div>
+          <div class="trust__item"><span>Framer</span></div>
+          <div class="trust__item"><span>Cloudflare</span></div>
+          <div class="trust__item"><span>Meta</span></div>
+          <div class="trust__item"><span>Google</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="about">
+      <div class="container about__inner">
+        <div class="about__label reveal-up">
+          <span class="eyebrow">/ About Kaeyan</span>
+        </div>
+        <h2 class="about__heading reveal-up">
+          We Don't Just Build Websites.<br />
+          <span class="text-gradient">We Build Businesses.</span>
+        </h2>
+        <p class="about__desc reveal-up">
+          Kaeyan AI Studio sits at the intersection of design craft and applied AI. We design the interface, engineer the automation behind it, and connect the two so your business runs faster the day we ship. No templates, no bloated retainers — just a small senior team building systems that compound: websites that convert, brands that hold up at scale, and workflows that quietly remove hours from your week.
+        </p>
+        <div class="about__grid">
+          <div class="about__card reveal-up">
+            <span class="about__card-num">01</span>
+            <h3>Design-led</h3>
+            <p>Every pixel is intentional — informed by brand strategy, not decoration.</p>
+          </div>
+          <div class="about__card reveal-up">
+            <span class="about__card-num">02</span>
+            <h3>AI-native</h3>
+            <p>Automation and intelligence are built into the product, not bolted on after.</p>
+          </div>
+          <div class="about__card reveal-up">
+            <span class="about__card-num">03</span>
+            <h3>Outcome-driven</h3>
+            <p>We measure success in conversion, retention and hours saved — not just delivery.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal-up">/ What We Do</span>
+          <h2 class="section-title reveal-up">Full-Stack Services for <span class="text-gradient">Modern Brands</span></h2>
+          <p class="section-desc reveal-up">From first sketch to the automation running quietly behind your product — everything lives under one roof.</p>
+        </div>
+
+        <div class="accordion" id="servicesAccordion">
+          <!-- Accordion items injected/enhanced by JS but present in HTML for no-JS fallback -->
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="true">
+              <span class="accordion__index">01</span>
+              <span class="accordion__title">AI Chatbots</span>
+              <span class="accordion__icon"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M5 12h14M12 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__panel-inner">
+                <p class="accordion__desc">Custom-trained conversational agents that handle support, sales and onboarding in your brand voice, connected directly to your data.</p>
+                <div class="accordion__meta">
+                  <div>
+                    <h4>Features</h4>
+                    <ul><li>Custom knowledge base</li><li>Multi-channel deployment</li><li>Human handoff logic</li></ul>
+                  </div>
+                  <div>
+                    <h4>Deliverables</h4>
+                    <ul><li>Trained agent</li><li>Admin dashboard</li><li>Analytics setup</li></ul>
+                  </div>
+                  <div>
+                    <h4>Timeline</h4>
+                    <p>2–4 weeks</p>
+                  </div>
+                  <div>
+                    <h4>Starting Price</h4>
+                    <p class="accordion__price">$1,200</p>
+                  </div>
+                </div>
+                <a href="#contact" class="btn btn--ghost btn--sm magnetic">Start This Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span class="accordion__index">02</span>
+              <span class="accordion__title">Business Websites</span>
+              <span class="accordion__icon"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M5 12h14M12 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__panel-inner">
+                <p class="accordion__desc">High-performance marketing websites built for credibility and speed — engineered to convert visitors from the first scroll.</p>
+                <div class="accordion__meta">
+                  <div><h4>Features</h4><ul><li>Custom design system</li><li>CMS integration</li><li>SEO foundation</li></ul></div>
+                  <div><h4>Deliverables</h4><ul><li>Full site build</li><li>Analytics + tracking</li><li>Launch support</li></ul></div>
+                  <div><h4>Timeline</h4><p>3–5 weeks</p></div>
+                  <div><h4>Starting Price</h4><p class="accordion__price">$1,800</p></div>
+                </div>
+                <a href="#contact" class="btn btn--ghost btn--sm magnetic">Start This Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span class="accordion__index">03</span>
+              <span class="accordion__title">Landing Pages</span>
+              <span class="accordion__icon"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M5 12h14M12 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__panel-inner">
+                <p class="accordion__desc">Focused, single-goal pages for launches, campaigns and ad traffic — built to test fast and convert faster.</p>
+                <div class="accordion__meta">
+                  <div><h4>Features</h4><ul><li>Conversion-first copy</li><li>A/B test ready</li><li>Fast load times</li></ul></div>
+                  <div><h4>Deliverables</h4><ul><li>Single page build</li><li>Form/CRM hookup</li></ul></div>
+                  <div><h4>Timeline</h4><p>1 week</p></div>
+                  <div><h4>Starting Price</h4><p class="accordion__price">$600</p></div>
+                </div>
+                <a href="#contact" class="btn btn--ghost btn--sm magnetic">Start This Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span class="accordion__index">04</span>
+              <span class="accordion__title">UX/UI Design</span>
+              <span class="accordion__icon"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M5 12h14M12 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__panel-inner">
+                <p class="accordion__desc">Research-backed interface design for web and product — wireframes through pixel-perfect, developer-ready files.</p>
+                <div class="accordion__meta">
+                  <div><h4>Features</h4><ul><li>User flows</li><li>Design system</li><li>Prototyping</li></ul></div>
+                  <div><h4>Deliverables</h4><ul><li>Figma files</li><li>Component library</li></ul></div>
+                  <div><h4>Timeline</h4><p>2–4 weeks</p></div>
+                  <div><h4>Starting Price</h4><p class="accordion__price">$1,000</p></div>
+                </div>
+                <a href="#contact" class="btn btn--ghost btn--sm magnetic">Start This Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span class="accordion__index">05</span>
+              <span class="accordion__title">Mobile App Design</span>
+              <span class="accordion__icon"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M5 12h14M12 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__panel-inner">
+                <p class="accordion__desc">Native-feeling iOS and Android interfaces designed for clarity, speed, and platform-native conventions.</p>
+                <div class="accordion__meta">
+                  <div><h4>Features</h4><ul><li>Platform guidelines</li><li>Interaction design</li><li>Dark/light modes</li></ul></div>
+                  <div><h4>Deliverables</h4><ul><li>Full screen set</li><li>Handoff specs</li></ul></div>
+                  <div><h4>Timeline</h4><p>3–6 weeks</p></div>
+                  <div><h4>Starting Price</h4><p class="accordion__price">$1,600</p></div>
+                </div>
+                <a href="#contact" class="btn btn--ghost btn--sm magnetic">Start This Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span class="accordion__index">06</span>
+              <span class="accordion__title">Dashboard Design</span>
+              <span class="accordion__icon"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M5 12h14M12 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__panel-inner">
+                <p class="accordion__desc">Data-dense interfaces that stay legible — built for admin panels, analytics tools and internal ops software.</p>
+                <div class="accordion__meta">
+                  <div><h4>Features</h4><ul><li>Data visualization</li><li>Role-based views</li><li>Dense layouts</li></ul></div>
+                  <div><h4>Deliverables</h4><ul><li>Screen designs</li><li>Chart components</li></ul></div>
+                  <div><h4>Timeline</h4><p>2–5 weeks</p></div>
+                  <div><h4>Starting Price</h4><p class="accordion__price">$1,400</p></div>
+                </div>
+                <a href="#contact" class="btn btn--ghost btn--sm magnetic">Start This Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span class="accordion__index">07</span>
+              <span class="accordion__title">SaaS Product Design</span>
+              <span class="accordion__icon"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M5 12h14M12 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__panel-inner">
+                <p class="accordion__desc">End-to-end product design for SaaS teams — from onboarding flows to the pricing page that closes the deal.</p>
+                <div class="accordion__meta">
+                  <div><h4>Features</h4><ul><li>Onboarding flows</li><li>Design system</li><li>Growth surfaces</li></ul></div>
+                  <div><h4>Deliverables</h4><ul><li>Full product design</li><li>Dev handoff</li></ul></div>
+                  <div><h4>Timeline</h4><p>4–8 weeks</p></div>
+                  <div><h4>Starting Price</h4><p class="accordion__price">$3,000</p></div>
+                </div>
+                <a href="#contact" class="btn btn--ghost btn--sm magnetic">Start This Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span class="accordion__index">08</span>
+              <span class="accordion__title">Brand Identity</span>
+              <span class="accordion__icon"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M5 12h14M12 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__panel-inner">
+                <p class="accordion__desc">A complete visual identity system — logo, color, type and voice — built to hold up across every touchpoint.</p>
+                <div class="accordion__meta">
+                  <div><h4>Features</h4><ul><li>Strategy workshop</li><li>Visual identity</li><li>Brand guidelines</li></ul></div>
+                  <div><h4>Deliverables</h4><ul><li>Brand book</li><li>Asset library</li></ul></div>
+                  <div><h4>Timeline</h4><p>3–5 weeks</p></div>
+                  <div><h4>Starting Price</h4><p class="accordion__price">$1,500</p></div>
+                </div>
+                <a href="#contact" class="btn btn--ghost btn--sm magnetic">Start This Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span class="accordion__index">09</span>
+              <span class="accordion__title">Logo Design</span>
+              <span class="accordion__icon"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M5 12h14M12 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__panel-inner">
+                <p class="accordion__desc">A distinct mark designed to work at any size — from a favicon to a billboard.</p>
+                <div class="accordion__meta">
+                  <div><h4>Features</h4><ul><li>Concept exploration</li><li>Vector delivery</li></ul></div>
+                  <div><h4>Deliverables</h4><ul><li>Logo suite</li><li>Usage guide</li></ul></div>
+                  <div><h4>Timeline</h4><p>1–2 weeks</p></div>
+                  <div><h4>Starting Price</h4><p class="accordion__price">$400</p></div>
+                </div>
+                <a href="#contact" class="btn btn--ghost btn--sm magnetic">Start This Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span class="accordion__index">10</span>
+              <span class="accordion__title">Social Media Management</span>
+              <span class="accordion__icon"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M5 12h14M12 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__panel-inner">
+                <p class="accordion__desc">Consistent, on-brand presence across your channels — content calendars, creative and reporting handled.</p>
+                <div class="accordion__meta">
+                  <div><h4>Features</h4><ul><li>Content calendar</li><li>Creative production</li><li>Monthly reporting</li></ul></div>
+                  <div><h4>Deliverables</h4><ul><li>Posts + captions</li><li>Performance report</li></ul></div>
+                  <div><h4>Timeline</h4><p>Ongoing / monthly</p></div>
+                  <div><h4>Starting Price</h4><p class="accordion__price">$500/mo</p></div>
+                </div>
+                <a href="#contact" class="btn btn--ghost btn--sm magnetic">Start This Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span class="accordion__index">11</span>
+              <span class="accordion__title">Digital Marketing</span>
+              <span class="accordion__icon"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M5 12h14M12 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__panel-inner">
+                <p class="accordion__desc">Paid and organic strategy across search, social and email — built around measurable growth targets.</p>
+                <div class="accordion__meta">
+                  <div><h4>Features</h4><ul><li>Channel strategy</li><li>Campaign management</li><li>Reporting dashboard</li></ul></div>
+                  <div><h4>Deliverables</h4><ul><li>Live campaigns</li><li>Monthly report</li></ul></div>
+                  <div><h4>Timeline</h4><p>Ongoing / monthly</p></div>
+                  <div><h4>Starting Price</h4><p class="accordion__price">$700/mo</p></div>
+                </div>
+                <a href="#contact" class="btn btn--ghost btn--sm magnetic">Start This Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span class="accordion__index">12</span>
+              <span class="accordion__title">SEO</span>
+              <span class="accordion__icon"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M5 12h14M12 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__panel-inner">
+                <p class="accordion__desc">Technical and content SEO that compounds — built on real search intent, not keyword stuffing.</p>
+                <div class="accordion__meta">
+                  <div><h4>Features</h4><ul><li>Technical audit</li><li>Content strategy</li><li>Link building</li></ul></div>
+                  <div><h4>Deliverables</h4><ul><li>Audit report</li><li>Monthly optimization</li></ul></div>
+                  <div><h4>Timeline</h4><p>Ongoing / monthly</p></div>
+                  <div><h4>Starting Price</h4><p class="accordion__price">$600/mo</p></div>
+                </div>
+                <a href="#contact" class="btn btn--ghost btn--sm magnetic">Start This Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span class="accordion__index">13</span>
+              <span class="accordion__title">Google Business Profile</span>
+              <span class="accordion__icon"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M5 12h14M12 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__panel-inner">
+                <p class="accordion__desc">Full setup and optimization to win local search and map pack placement.</p>
+                <div class="accordion__meta">
+                  <div><h4>Features</h4><ul><li>Profile optimization</li><li>Review strategy</li></ul></div>
+                  <div><h4>Deliverables</h4><ul><li>Optimized listing</li><li>Post schedule</li></ul></div>
+                  <div><h4>Timeline</h4><p>1 week</p></div>
+                  <div><h4>Starting Price</h4><p class="accordion__price">$250</p></div>
+                </div>
+                <a href="#contact" class="btn btn--ghost btn--sm magnetic">Start This Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span class="accordion__index">14</span>
+              <span class="accordion__title">Workflow Automation</span>
+              <span class="accordion__icon"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M5 12h14M12 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__panel-inner">
+                <p class="accordion__desc">We map your manual processes and rebuild them as automated systems — fewer clicks, fewer errors.</p>
+                <div class="accordion__meta">
+                  <div><h4>Features</h4><ul><li>Process mapping</li><li>Tool integration</li><li>Error handling</li></ul></div>
+                  <div><h4>Deliverables</h4><ul><li>Live workflow</li><li>Documentation</li></ul></div>
+                  <div><h4>Timeline</h4><p>2–3 weeks</p></div>
+                  <div><h4>Starting Price</h4><p class="accordion__price">$900</p></div>
+                </div>
+                <a href="#contact" class="btn btn--ghost btn--sm magnetic">Start This Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span class="accordion__index">15</span>
+              <span class="accordion__title">Graphic Design</span>
+              <span class="accordion__icon"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M5 12h14M12 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__panel-inner">
+                <p class="accordion__desc">On-brand visual assets for print and digital — brochures, menus, cards, posters and packaging.</p>
+                <div class="accordion__meta">
+                  <div><h4>Features</h4><ul><li>Brochure design</li><li>Restaurant menu</li><li>Business cards</li><li>Poster & flyer design</li><li>Packaging design</li></ul></div>
+                  <div><h4>Deliverables</h4><ul><li>Print-ready files</li><li>Source files</li></ul></div>
+                  <div><h4>Timeline</h4><p>1–3 weeks</p></div>
+                  <div><h4>Starting Price</h4><p class="accordion__price">$300</p></div>
+                </div>
+                <a href="#contact" class="btn btn--ghost btn--sm magnetic">Start This Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span class="accordion__index">16</span>
+              <span class="accordion__title">Video Editing & Motion Graphics</span>
+              <span class="accordion__icon"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M5 12h14M12 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__panel-inner">
+                <p class="accordion__desc">Sharp, platform-native edits and motion design for product, brand and social content.</p>
+                <div class="accordion__meta">
+                  <div><h4>Features</h4><ul><li>Editing & pacing</li><li>Motion graphics</li><li>Sound design</li></ul></div>
+                  <div><h4>Deliverables</h4><ul><li>Final cuts</li><li>Platform exports</li></ul></div>
+                  <div><h4>Timeline</h4><p>1–2 weeks</p></div>
+                  <div><h4>Starting Price</h4><p class="accordion__price">$450</p></div>
+                </div>
+                <a href="#contact" class="btn btn--ghost btn--sm magnetic">Start This Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span class="accordion__index">17</span>
+              <span class="accordion__title">AI Automation</span>
+              <span class="accordion__icon"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M5 12h14M12 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__panel-inner">
+                <p class="accordion__desc">Applied AI systems for CRM, WhatsApp and email — automations that think, not just trigger.</p>
+                <div class="accordion__meta">
+                  <div><h4>Features</h4><ul><li>CRM automation</li><li>WhatsApp automation</li><li>Email automation</li></ul></div>
+                  <div><h4>Deliverables</h4><ul><li>Live automations</li><li>Monitoring setup</li></ul></div>
+                  <div><h4>Timeline</h4><p>2–4 weeks</p></div>
+                  <div><h4>Starting Price</h4><p class="accordion__price">$1,100</p></div>
+                </div>
+                <a href="#contact" class="btn btn--ghost btn--sm magnetic">Start This Project</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY CHOOSE US ============ -->
+    <section class="why">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal-up">/ Why Kaeyan</span>
+          <h2 class="section-title reveal-up">Built Different, <span class="text-gradient">By Design</span></h2>
+        </div>
+        <div class="why__grid">
+          <div class="why__card reveal-up">
+            <div class="why__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.4 6.6L21 11l-6.6 2.4L12 20l-2.4-6.6L3 11l6.6-2.4L12 2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+            <h3>AI First</h3>
+            <p>Every engagement starts by asking what should be automated, not just what should be designed.</p>
+          </div>
+          <div class="why__card reveal-up">
+            <div class="why__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.6"/><rect x="14" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.6"/><rect x="3" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.6"/><rect x="14" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.6"/></svg></div>
+            <h3>Modern Design</h3>
+            <p>Interfaces built to the standard of the products we admire — Linear, Stripe, Vercel.</p>
+          </div>
+          <div class="why__card reveal-up">
+            <div class="why__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h7l-1 8 11-14h-8l1-6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+            <h3>Fast Delivery</h3>
+            <p>Small senior team, no layers of account management — from kickoff to launch, fast.</p>
+          </div>
+          <div class="why__card reveal-up">
+            <div class="why__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+            <h3>Affordable</h3>
+            <p>Startup-friendly pricing without cutting corners on craft or performance.</p>
+          </div>
+          <div class="why__card reveal-up">
+            <div class="why__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 17l6-6 4 4 8-8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 7h7v7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h3>Scalable</h3>
+            <p>Systems designed to grow with you, from first launch to enterprise scale.</p>
+          </div>
+          <div class="why__card reveal-up">
+            <div class="why__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M20 12a8 8 0 10-3.2 6.4L20 20l-1.2-3.6A7.96 7.96 0 0020 12z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+            <h3>Dedicated Support</h3>
+            <p>Direct access to the people building your product — not a ticket queue.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRICING ============ -->
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal-up">/ Pricing</span>
+          <h2 class="section-title reveal-up">Plans That <span class="text-gradient">Scale With You</span></h2>
+          <p class="section-desc reveal-up">Transparent packages for every stage — from first launch to enterprise rollout.</p>
+        </div>
+
+        <div class="pricing__grid">
+          <div class="price-card reveal-up">
+            <h3 class="price-card__name">Business Starter</h3>
+            <p class="price-card__desc">For new businesses that need a credible presence, fast.</p>
+            <div class="price-card__amount"><span>$999</span><small>/ project</small></div>
+            <ul class="price-card__features">
+              <li>5-page business website</li>
+              <li>Mobile responsive build</li>
+              <li>Basic SEO setup</li>
+              <li>1 round of revisions</li>
+              <li>2 week delivery</li>
+            </ul>
+            <a href="#contact" class="btn btn--ghost btn--block magnetic">Get Started</a>
+          </div>
+
+          <div class="price-card price-card--featured reveal-up">
+            <span class="price-card__tag">Most Popular</span>
+            <h3 class="price-card__name">Business Growth</h3>
+            <p class="price-card__desc">For businesses ready to add design systems and automation.</p>
+            <div class="price-card__amount"><span>$2,499</span><small>/ project</small></div>
+            <ul class="price-card__features">
+              <li>Full custom website + CMS</li>
+              <li>Brand identity refresh</li>
+              <li>1 AI automation workflow</li>
+              <li>Advanced SEO + analytics</li>
+              <li>3 rounds of revisions</li>
+              <li>Priority support</li>
+            </ul>
+            <a href="#contact" class="btn btn--primary btn--block magnetic">Get Started</a>
+          </div>
+
+          <div class="price-card reveal-up">
+            <h3 class="price-card__name">Enterprise</h3>
+            <p class="price-card__desc">For teams that need a full product, brand and automation suite.</p>
+            <div class="price-card__amount"><span>Custom</span></div>
+            <ul class="price-card__features">
+              <li>Full product design system</li>
+              <li>Multi-channel AI automation</li>
+              <li>Dedicated project team</li>
+              <li>SLA-backed support</li>
+              <li>Quarterly strategy reviews</li>
+            </ul>
+            <a href="#contact" class="btn btn--ghost btn--block magnetic">Talk To Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="process" id="process">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal-up">/ How We Work</span>
+          <h2 class="section-title reveal-up">A Process Built for <span class="text-gradient">Momentum</span></h2>
+        </div>
+
+        <div class="timeline" id="timeline">
+          <div class="timeline__line"><span class="timeline__line-fill" id="timelineFill"></span></div>
+
+          <div class="timeline__item reveal-up">
+            <span class="timeline__num">01</span>
+            <h3>Discovery</h3>
+            <p>We learn your business, your audience and what "success" actually means for this project.</p>
+          </div>
+          <div class="timeline__item reveal-up">
+            <span class="timeline__num">02</span>
+            <h3>Strategy</h3>
+            <p>We map the plan — architecture, content and the automation opportunities hiding in your workflow.</p>
+          </div>
+          <div class="timeline__item reveal-up">
+            <span class="timeline__num">03</span>
+            <h3>Design</h3>
+            <p>We design the full experience, reviewed with you at every key milestone.</p>
+          </div>
+          <div class="timeline__item reveal-up">
+            <span class="timeline__num">04</span>
+            <h3>Development</h3>
+            <p>We build it — clean, fast, and tested across every device before it ever ships.</p>
+          </div>
+          <div class="timeline__item reveal-up">
+            <span class="timeline__num">05</span>
+            <h3>Launch</h3>
+            <p>We ship with a checklist, not a guess — performance, SEO and tracking all verified.</p>
+          </div>
+          <div class="timeline__item reveal-up">
+            <span class="timeline__num">06</span>
+            <h3>Support</h3>
+            <p>We stay close after launch to tune, extend and keep your systems running.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PORTFOLIO ============ -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal-up">/ Selected Work</span>
+          <h2 class="section-title reveal-up">Projects That <span class="text-gradient">Speak First</span></h2>
+        </div>
+
+        <div class="portfolio__grid">
+          <article class="port-card reveal-up">
+            <div class="port-card__media port-card__media--1">
+              <div class="port-card__glow"></div>
+            </div>
+            <div class="port-card__body">
+              <div class="port-card__tags"><span>AI Product</span><span>Dashboard</span></div>
+              <h3>Nova Analytics</h3>
+              <p>A real-time analytics dashboard with an embedded AI insight layer.</p>
+              <a href="#" class="port-card__link">View Case Study
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="port-card reveal-up">
+            <div class="port-card__media port-card__media--2">
+              <div class="port-card__glow"></div>
+            </div>
+            <div class="port-card__body">
+              <div class="port-card__tags"><span>Branding</span><span>Website</span></div>
+              <h3>Solace Wellness</h3>
+              <p>Full identity and site rebuild for a modern wellness studio brand.</p>
+              <a href="#" class="port-card__link">View Case Study
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="port-card reveal-up">
+            <div class="port-card__media port-card__media--3">
+              <div class="port-card__glow"></div>
+            </div>
+            <div class="port-card__body">
+              <div class="port-card__tags"><span>Automation</span><span>CRM</span></div>
+              <h3>Fieldwork CRM Flow</h3>
+              <p>End-to-end lead automation connecting WhatsApp, email and CRM.</p>
+              <a href="#" class="port-card__link">View Case Study
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="port-card reveal-up">
+            <div class="port-card__media port-card__media--4">
+              <div class="port-card__glow"></div>
+            </div>
+            <div class="port-card__body">
+              <div class="port-card__tags"><span>SaaS</span><span>Product Design</span></div>
+              <h3>Ledger Finance OS</h3>
+              <p>A full product design system for a B2B finance operations platform.</p>
+              <a href="#" class="port-card__link">View Case Study
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal-up">/ FAQ</span>
+          <h2 class="section-title reveal-up">Questions, <span class="text-gradient">Answered</span></h2>
+        </div>
+
+        <div class="faq__list">
+          <div class="faq__item">
+            <button class="faq__trigger" aria-expanded="false">
+              <span>How long does a typical project take?</span>
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__panel">
+              <div class="faq__panel-inner">
+                <p>Most landing pages ship in about a week, full websites in three to five weeks, and product design or automation engagements in four to eight weeks depending on scope. You'll get a firm timeline after discovery.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__trigger" aria-expanded="false">
+              <span>Do you work with businesses outside tech?</span>
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__panel">
+              <div class="faq__panel-inner">
+                <p>Yes. We work with restaurants, wellness brands, local services and enterprise teams alongside SaaS and AI companies — the discipline is the same, the application changes.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__trigger" aria-expanded="false">
+              <span>What does "AI automation" actually include?</span>
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__panel">
+              <div class="faq__panel-inner">
+                <p>It covers chatbots, CRM workflows, WhatsApp and email automation, and custom integrations that connect your tools so information moves without manual entry.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__trigger" aria-expanded="false">
+              <span>Can you work with our existing brand?</span>
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__panel">
+              <div class="faq__panel-inner">
+                <p>Absolutely. We can design within your current identity, evolve it, or start fresh with a full rebrand — whichever fits where your business is headed.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__trigger" aria-expanded="false">
+              <span>What happens after launch?</span>
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__panel">
+              <div class="faq__panel-inner">
+                <p>Every project includes a support window post-launch, and ongoing plans are available for maintenance, marketing and automation tuning as your business grows.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT / CTA ============ -->
+    <section class="contact" id="contact">
+      <div class="contact__glow" aria-hidden="true"></div>
+      <div class="container contact__inner">
+        <div class="section-head">
+          <span class="eyebrow reveal-up">/ Get In Touch</span>
+          <h2 class="section-title reveal-up">Let's Build Something <span class="text-gradient">Worth Talking About.</span></h2>
+          <p class="section-desc reveal-up">Tell us about your project — we'll reply within one business day with next steps.</p>
+        </div>
+
+        <form class="contact-form reveal-up" id="contactForm" novalidate>
+          <div class="contact-form__row">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required />
+              <span class="field__error">Please enter your name</span>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@company.com" required />
+              <span class="field__error">Please enter a valid email</span>
+            </div>
+          </div>
+          <div class="contact-form__row">
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 00000 00000" />
+            </div>
+            <div class="field">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" placeholder="Company name" />
+            </div>
+          </div>
+          <div class="field">
+            <label for="service">Service</label>
+            <select id="service" name="service">
+              <option value="">Select a service</option>
+              <option>AI Chatbots</option>
+              <option>Business Website</option>
+              <option>Landing Page</option>
+              <option>UX/UI Design</option>
+              <option>Brand Identity</option>
+              <option>Workflow Automation</option>
+              <option>Digital Marketing</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us a little about your project..." required></textarea>
+            <span class="field__error">Please tell us about your project</span>
+          </div>
+          <button type="submit" class="btn btn--primary btn--lg btn--block magnetic">
+            <span id="submitLabel">Send Message</span>
+          </button>
+          <p class="contact-form__success" id="formSuccess" role="status">Thanks — your message is in. We'll be in touch within one business day.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__top">
+      <div class="footer__brand">
+        <a href="#home" class="navbar__logo">
+          <span class="navbar__logo-mark" aria-hidden="true">K</span>
+          <span class="navbar__logo-text">Kaeyan<span class="navbar__logo-accent">.</span></span>
+        </a>
+        <p>AI • Websites • Automation • Branding — a studio for businesses that want to move like a funded startup.</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="Twitter / X" class="footer__social"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-7.1l-5.5-7.2L4.3 22H1.2l8.1-9.3L.9 2h7.3l5 6.6L18.9 2zm-1.2 18h1.9L7.4 4H5.4l12.3 16z"/></svg></a>
+          <a href="#" aria-label="LinkedIn" class="footer__social"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3V9zm7 0h3.8v1.7h.05c.53-.95 1.83-1.96 3.77-1.96 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.6c0-1.34-.02-3.06-1.86-3.06-1.87 0-2.16 1.46-2.16 2.96V21h-4V9z"/></svg></a>
+          <a href="#" aria-label="Instagram" class="footer__social"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.85.07 3.25.15 4.77 1.7 4.92 4.92.06 1.25.07 1.62.07 4.81 0 3.2 0 3.56-.07 4.81-.15 3.21-1.66 4.77-4.92 4.92-1.25.06-1.62.07-4.85.07-3.2 0-3.56 0-4.81-.07-3.26-.15-4.77-1.72-4.92-4.92-.06-1.25-.07-1.61-.07-4.81 0-3.19 0-3.56.07-4.81C2.43 3.99 3.96 2.43 7.19 2.27 8.44 2.21 8.8 2.2 12 2.2zm0 1.98c-3.14 0-3.5 0-4.74.07-2.17.1-3.28 1.19-3.38 3.38-.06 1.24-.07 1.6-.07 4.74s0 3.5.07 4.74c.1 2.19 1.2 3.28 3.38 3.38 1.24.06 1.6.07 4.74.07s3.5 0 4.74-.07c2.17-.1 3.28-1.19 3.38-3.38.06-1.24.07-1.6.07-4.74s0-3.5-.07-4.74c-.1-2.18-1.2-3.28-3.38-3.38-1.24-.06-1.6-.07-4.74-.07zm0 3.36a5.26 5.26 0 110 10.52 5.26 5.26 0 010-10.52zm0 1.98a3.28 3.28 0 100 6.56 3.28 3.28 0 000-6.56zm5.4-2.16a1.23 1.23 0 110 2.46 1.23 1.23 0 010-2.46z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#process">Process</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Company</h4>
+        <a href="#services">AI Automation</a>
+        <a href="#services">Web Design</a>
+        <a href="#services">Branding</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </div>
+
+      <div class="footer__col footer__newsletter">
+        <h4>Newsletter</h4>
+        <p>Occasional notes on AI, design and automation. No spam.</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="you@company.com" aria-label="Email address" required />
+          <button type="submit" aria-label="Subscribe">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> Kaeyan AI Studio. All rights reserved.</p>
+      <div class="footer__legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
